@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep  4 09:27:21 2020
-
-@author: vlad
-"""
 import os
 import requests
 from dotenv import load_dotenv, find_dotenv

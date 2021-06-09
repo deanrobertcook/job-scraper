@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 python-dotenv = "*"
 requests = "*"
+selenium = "*"
+python-graphql-client = "*"
 
 [dev-packages]
 

@@ -1,2 +1,4 @@
 output/
+misc/
+bin/
 .env

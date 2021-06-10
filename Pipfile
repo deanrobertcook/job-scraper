@@ -8,6 +8,7 @@ python-dotenv = "*"
 requests = "*"
 selenium = "*"
 python-graphql-client = "*"
+bs4 = "*"
 
 [dev-packages]
 

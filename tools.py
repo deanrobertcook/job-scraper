@@ -20,7 +20,7 @@ def flatten_json(nested_json, exclude=[''], drop_lone_keys=False):
         if type(x) is dict:
             for a in x:
                 #if drop_lone_keys and len(x.keys()) == 1 and dict_depth(x.values()) > 1: continue
-                elif a not in exclude: flatten(x[a], name + a + '_')
+                if a not in exclude: flatten(x[a], name + a + '_')
         elif type(x) is list:
             i = 0
             for a in x:

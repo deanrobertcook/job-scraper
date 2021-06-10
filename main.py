@@ -4,6 +4,7 @@ import json
 import time
 from python_graphql_client import GraphqlClient
 from bs4 import BeautifulSoup
+from tools import flatten_json
 
 HEADERS = {
     'authority': 'www.glassdoor.de',
@@ -135,32 +136,7 @@ def jobids_from_page(html):
     job_els = soup.find_all(attrs={"data-id": True})
     return list(map(lambda x: x['data-id'], job_els))
 
-def flatten_json(nested_json, exclude=['']):
-    """Flatten json object with nested keys into a single level.
-        Credit: https://stackoverflow.com/a/57334325/1751834
-        Args:
-            nested_json: A nested json object.
-            exclude: Keys to exclude from output.
-        Returns:
-            The flattened json object if successful, None otherwise.
 
-    """
-    out = {}
-
-    def flatten(x, name='', exclude=exclude):
-        if type(x) is dict:
-            for a in x:
-                if a not in exclude: flatten(x[a], name + a + '_')
-        elif type(x) is list:
-            i = 0
-            for a in x:
-                flatten(a, name + str(i) + '_')
-                i += 1
-        else:
-            out[name[:-1]] = x
-
-    flatten(nested_json)
-    return out
 
 def scrape():
     #html = get_page(2)

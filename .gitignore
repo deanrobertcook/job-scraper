@@ -1,4 +1,5 @@
 output/
 misc/
 bin/
+.ipynb_checkpoints/
 .env

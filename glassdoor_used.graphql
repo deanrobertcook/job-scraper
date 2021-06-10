@@ -1,0 +1,88 @@
+query JobDetailQuery($jl: Long!, $queryString: String, $enableReviewSummary: Boolean!) {
+    jobView(listingId: $jl, contextHolder: { queryString: $queryString }) {
+        ...DetailFragment
+        employerReviewSummary @include(if: $enableReviewSummary) {
+            reviewSummary {
+                highlightSummary {
+                    sentiment
+                    sentence
+                    categoryReviewCount
+                    __typename
+                }
+                __typename
+            }
+            __typename
+        }
+        __typename
+    }
+}
+
+fragment DetailFragment on JobView {
+    header {
+        ageInDays
+        employer {
+            name
+            size
+        }
+        expired
+        locationName
+        normalizedJobTitle
+    }
+    job {
+        description
+        listingId
+    }
+    reviews {
+        reviews {
+            advice
+            cons
+            countHelpful
+            employerResponses {
+                response
+                responseDateTime
+                userJobTitle
+            }
+            employmentStatus
+            featured
+            isCurrentJob
+            jobTitle {
+                text
+            }
+            lengthOfEmployment
+            pros
+            ratingBusinessOutlook
+            ratingCareerOpportunities
+            ratingCeo
+            ratingCompensationAndBenefits
+            ratingCultureAndValues
+            ratingOverall
+            ratingRecommendToFriend
+            ratingSeniorLeadership
+            ratingWorkLifeBalance
+            reviewDateTime
+            reviewId
+            summary
+        }
+    }
+    salary {
+        currency {
+            code
+            numOfDecimals
+            negativeFormat
+            positiveFormat
+            symbol
+        }
+        lastSalaryDate
+        salaries {
+            count
+            maxBasePay
+            medianBasePay
+            minBasePay
+            jobTitle {
+                id
+                text
+            }
+            payPeriod
+        }
+    }
+}

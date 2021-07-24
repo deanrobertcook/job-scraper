@@ -14,7 +14,7 @@ HEADERS = {
     'authority': 'www.glassdoor.de',
     'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
     'apollographql-client-name': 'job-search',
-    'gd-csrf-token': 'XnHnRBpecsnltwfSsuUq7w:1Nj0DE0ZKlMyfApYdSb6GMgmVywB33JaM5jY0tWH5Q8HXg0rkG6oSVwTq2XiHyN23z5EJhwyzHq214TFP9mBMg:_X86EbGAcpomAyIzTTM1nNB6PXTHTmPf43Q6Sk0-6TQ',
+    'gd-csrf-token': 'uIaW6I5aCn5g0BD9F64KOA:_B_vXQgrCOpQjhLOZGZ24959kx_hHS3jb6xYDPJ2USAdFLuadLC5Hi_JtKvUysvf_rqj7bvgzLSteGbwAuydYA:zoXH6b_y2hGrv_2YeGHHr8Tyz9XoY9Tr8Iiacs3Ahtg',
     'sec-ch-ua-mobile': '?0',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36',
     'content-type': 'application/json',
@@ -26,7 +26,7 @@ HEADERS = {
     'sec-fetch-dest': 'empty',
     'referer': 'https://www.glassdoor.de/',
     'accept-language': 'en-US;q=0.9,en;q=0.8',
-    'cookie': 'SameSite=None; JSESSIONID_JX_APP=89A2B9C2383C5E7B0E86200AD53765FD; GSESSIONID=9b71847a-29df-4b62-84bc-ffd277682f95+1623578164102; gdId=9b71847a-29df-4b62-84bc-ffd277682f95; trs=direct:direct:direct:2021-06-13+02%3A56%3A04.116:undefined:undefined; cass=2; gdsid=1623578164102:1623578164102:881D4A0A153BA160041333511B18A694; asst=1623578164.0; bs=0KyxbgWiOoyrxAatILnvOg:upq3cdAY-ogmm_Z4rNYRfJ1CHT_1mJxhNwEqeFZIWfjKGhrbnOAzG9pzBQDDvYmDA6kijEnIavaD52c01_35d5kZrMHJdZ0zsFj4N556-Eo:Bg6WqsDs0Er_f-74bkbo7XO7z896-8srlWDQAluEBww; __cf_bm=7d4ebef69d65784899ca07bd53c649b09da973ac-1623578164-1800-AeTtqTXksgKApYCGR/5ALOPoBmtg57id8jlALlcNGN63e/DDC6kwnspfXnsyt6WH2JlgIDotPlgVudSYlTJ39Sk=; indeedCtk=1f82cpfbou2ct801; JSESSIONID=60D3B2D90A1EE8C98CF44F30859419BA; _ga=GA1.2.787950244.1623578167; _gid=GA1.2.686091598.1623578167; _dc_gtm_UA-2595786-1=1; _GA_Job_Session=true; _gat_UA-2595786-1=1; AWSALB=jYekfAJCughC9hJV9dGQxVXOwhosZF/8uAGh8bMz4oloGhCVKyLxKllS6f2/vuCbdJXAqiYtrr/VoxiWJXDj16Mo4vFvQVxBNOr0G56USMIfCzaeOHYIFPCyQJwheXpjfHhyt6sPf2b1GzFvVRTDT+zobtbbomInjPIcD8WLNEMSa8KH3b6cpN9AkaQxpQ==; AWSALBCORS=jYekfAJCughC9hJV9dGQxVXOwhosZF/8uAGh8bMz4oloGhCVKyLxKllS6f2/vuCbdJXAqiYtrr/VoxiWJXDj16Mo4vFvQVxBNOr0G56USMIfCzaeOHYIFPCyQJwheXpjfHhyt6sPf2b1GzFvVRTDT+zobtbbomInjPIcD8WLNEMSa8KH3b6cpN9AkaQxpQ==; _optionalConsent=false; OptanonConsent=isIABGlobal=false&datestamp=Sun+Jun+13+2021+11%3A56%3A08+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=6.8.0&hosts=&consentId=4d858633-6e93-4812-bcf0-bc1b15b82aa9&interactionCount=0&landingPath=https%3A%2F%2Fwww.glassdoor.de%2FJob%2Fberlin-data-science-jobs-SRCH_IL.0%2C6_IC2622109_KO7%2C19.htm&groups=C0001%3A1%2CC0003%3A0%2CC0002%3A0%2CC0004%3A0%2CC0017%3A0; g_state={"i_p":1623585371407,"i_l":1}; G_ENABLED_IDPS=google; _ga_RC95PMVB3H=GS1.1.1623578166.1.1.1623578175.51',
+    'cookie': 'gdId=9b71847a-29df-4b62-84bc-ffd277682f95; trs=direct:direct:direct:2021-06-13+02%3A56%3A04.116:undefined:undefined; indeedCtk=1f82cpfbou2ct801; _optionalConsent=false; G_ENABLED_IDPS=google; JSESSIONID_JX_APP=6B26178413145BD4356858ACAD4D6548; GSESSIONID=9b71847a-29df-4b62-84bc-ffd277682f95+1623677229683; cass=2; gdsid=1623677229683:1623677229683:1B4C97995A6F7FF2698FE7A17BA4DFE7; asst=1623677229.0; bs=1LPPFNwuXl2uNnqkzLdPEQ:gSM6468bX3SltOPr-rVvIWRbEP0sjvCEcF2Wcnc7-yKeobOiPKUhFRA-IxX6C74mS7q6bDOUMODbdp4umUQ0pumK7WxGZcKMLVt0iANCBIc:XUHI8e85z8b0qEZtEukOro98FTykzw2_2wrbnc1JWTE; __cf_bm=d01a969f37110764047eeae2ea88a41695fa673d-1623677233-1800-ATm7pjhXdX29rW+iWHfsWF3Vua7JnDsoJFnd14ooAkgnS6IqL1g9NqXTibsWuvOm5AVkohucRz6y/yq18A3iGLY=; _ga=GA1.2.787950244.1623578167; _gid=GA1.2.1077055335.1623677240; _dc_gtm_UA-2595786-1=1; _GA_Job_Session=true; _gat_UA-2595786-1=1; OptanonConsent=isIABGlobal=false&datestamp=Mon+Jun+14+2021+15%3A27%3A21+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=6.8.0&hosts=&consentId=4d858633-6e93-4812-bcf0-bc1b15b82aa9&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A0%2CC0002%3A0%2CC0004%3A0%2CC0017%3A0&AwaitingReconsent=false; JSESSIONID=943C03706C9CB9873C9BF4A79E96B7D5; g_state={"i_p":1623763644954,"i_l":2}; _ga_RC95PMVB3H=GS1.1.1623677233.3.1.1623677261.32; AWSALB=nAXEY2KDPoK/8LKy/CntC7X+//IwnX1FB7Xo1z6at/JLTzNT0xJ48XnMWNEcp4zTB2pgeC6w+n32qOZ3EgGST0k5eWMNdqyaH0AzYmz2irMJFpe9dHU/XFO10jLXYLS4yjQDT+sDxFuA1nw8IJKyGIcQKwZdT3zaactjW+iDcHk3DLJtFJIrZY9V8W8k3w==; AWSALBCORS=nAXEY2KDPoK/8LKy/CntC7X+//IwnX1FB7Xo1z6at/JLTzNT0xJ48XnMWNEcp4zTB2pgeC6w+n32qOZ3EgGST0k5eWMNdqyaH0AzYmz2irMJFpe9dHU/XFO10jLXYLS4yjQDT+sDxFuA1nw8IJKyGIcQKwZdT3zaactjW+iDcHk3DLJtFJIrZY9V8W8k3w==',
 }
 
 def job_info(jobListingId):
@@ -70,4 +70,4 @@ def get_filename():
     return 'output/glassdoor-jobs_{}.json'.format(datetime.now().strftime("%Y-%m-%d_%H:%M:%S"))
 
 if __name__ == "__main__":
-    scrape(range(1, 11))
+    scrape(range(11, 31))

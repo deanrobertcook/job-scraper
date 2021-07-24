@@ -13,14 +13,16 @@ class GlassdoorSpider(scrapy.Spider):
     ]
 
     def parse(self, response, **kwargs):
-        inspect_response(response, self)
+        # for li in response.css('li.react-job-listing'):
+        #     yield {
+        #         'glassdoor_id': li.attrib['data-id'],
+        #         'job_title': li.attrib['data-normalize-job-title']
+        #     }
 
-        
-
-        for li in response.css('li.react-job-listing'):
-            yield {
-                'glassdoor_id': li.attrib['data-id'],
-                'job_title': li.attrib['data-normalize-job-title']
-            }
+        links = response.css('li.react-job-listing a.jobLink')
+        if len(links) > 0:
+            yield response.follow(links[0], callback=self.parse)
+        else:
+            inspect_response(response, self)
             
             

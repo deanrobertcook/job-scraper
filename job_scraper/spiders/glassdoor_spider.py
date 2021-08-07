@@ -4,7 +4,6 @@ from http.cookies import SimpleCookie
 
 # TODO allow different search terms
 BASE_URL = 'https://www.glassdoor.de/Job/berlin-data-science-jobs-SRCH_IL.0,6_IC2622109_KO7,19_IP{}.htm'
-PAGES_TO_SCRAPE = 3 #30
 
 GRAPHQL_URL = 'https://www.glassdoor.de/graph'
 
@@ -63,6 +62,7 @@ class GlassdoorSpider(scrapy.Spider):
         #Now try and parse individual graphql(json) requests
         try:
             js = json.loads(response.text)
+            #TODO - include scraped time and job post date (if applicable)
             yield {
                 'company_name': js['data']['jobView']['header']['employer']['name'],
                 'job_title': js['data']['jobView']['header']['jobTitleText'],
@@ -74,7 +74,7 @@ class GlassdoorSpider(scrapy.Spider):
 
         # Look for next pages:
         if response.css('div#FooterPageNav a[data-test="pagination-next"]::attr(href)').get() is not None:
-            page = (response.meta['page'] + 1) % 3 + 1 #Deduplication should slow us down here
+            page = (response.meta['page'] + 1)
             yield scrapy.Request(BASE_URL.format(page), callback=self.parse, meta={'page': page})
 
 #TODO move this somewhere more generic - will come in handy for other graphql operations
